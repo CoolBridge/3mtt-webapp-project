@@ -1,0 +1,295 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #181a1b;
+  color: #fff;
+  margin: 0;
+  font-family: sans-serif;
+}
+/* ------------------------NAV-BAR----------------------- */
+.navContainer {
+  width: 100vw;
+  max-width: 80rem ;
+  display: flex;
+  align-items: center;
+  /* flex-direction: row; */
+  justify-content: space-between;
+  margin: 1rem auto;
+  padding: 0 1rem;
+  flex-wrap: wrap;
+}
+.navContainer a {
+  text-decoration: none;
+  padding: 1rem;
+}
+.logoImg{
+  width: 8rem;
+  margin-right: 15rem;
+}
+
+/* ----------------------HOME------------------------- */
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 80%;
+  margin-top: 3%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  color: #292929;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: cover;
+}
+
+h3{
+  padding-top: 2rem;
+  width: 60%;
+  margin-left: 20%;
+  font-size: 30px;
+}
+
+span{
+  color: gold;
+}
+
+.desc{
+  margin-top: 1rem;
+  font-size: 15px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.homeButton {
+  background-color: gold;
+  padding: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 2rem;
+  font-weight: bold;
+  color: black;
+}
+
+/* ------------------------------GIT-REPO-------------------- */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border-radius: 10px;
+  border: none;
+  width: 80%;
+  font-weight: bold;
+  font-size: 20px;
+  margin: auto;
+  
+}
+.container a {
+  color: black;
+  text-decoration: none;
+  background-color: gold;
+  padding: 2.5rem;
+  border-radius: 5px;
+  width: 40%;
+  height: 100px;
+  text-align: center;
+  align-items: center;
+}
+.pageNumbers {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.pageNumbers li {
+  cursor: pointer;
+  color: #fff;
+  font-weight: bold;
+  padding: 8px;
+  margin: 5px;
+  border: 2px solid gold;
+}
+
+.pageNumbers li.active {
+  background-color: gold;
+  color: black;
+}
+
+.prevNext button {
+  height: 2px;
+  color: #fff;
+  padding: 4px;
+}
+.gitRepo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+.secondGrid {
+  display: flex;
+  margin-bottom: 5px;
+  color: gold;
+  border: none;
+  margin: auto 0;
+  font-weight: 40px;
+  line-height: 40px;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.myrepo p {
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 0.7rem;
+
+}
+.myrepo a {
+  background-color: gold;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 10px;
+  color: black;
+}
+/* --------------ABOUT------------- */
+
+.about {
+  display: flex;
+  flex-direction: row;
+  padding: 0 5em;
+  align-items: center;
+}
+h1{
+  margin-top: 2rem;
+}
+.about p {
+  color: gold;
+  font-weight: lighter;
+  padding-top: 0.6rem;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}
+.abt-desc {
+  margin: 1.1rem 0;
+
+  margin-right: 6rem;
+  font-size: 20px;
+}
+.meetme {
+  height: 250px;
+  width: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+/* -------------------CONTACT-------------------- */
+
+.contactWrapper {
+  margin: 3rem auto;
+  width: 100vw;
+  max-width: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  border: solid 0.1rem gold;
+  border-radius: 1rem;
+}
+
+.contact-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.contact-text {
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.contactForm {
+  margin: 1rem;
+}
+
+.form-group{
+margin: 1rem;
+}
+
+label{
+  display: block;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding:0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.contact-btn {
+  background-color: gold;
+  border-radius: 0.7rem;
+  cursor: pointer;
+  padding: 0.4rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  padding: 0.3rem;
+  height: 3rem;
+  width: 7rem;
+  color: black;
+}
+
+@media (max-width: 1000px) {
+  .home,
+  .about,
+  .container,
+  .navContainer,
+  .resume,
+  .lorem {
+    flex-direction: column;
+
+    width: 100%;
+
+    font-size: 1em;
+  }
+  img {
+    margin-top: 10px;
+  }
+  .navContainer a {
+    margin: 5px;
+    padding: 0;
+  }
+  .name {
+    display: none;
+  }
+}
+/* @media (max-width: 800px) {
+  .lorem {
+    margin: 0;
+  }
+} */
